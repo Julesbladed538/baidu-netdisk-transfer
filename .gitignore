@@ -1,0 +1,12 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated docs (auto-generated from SKILL.md)
+generate_docs.py
+生成小白文档.py
+
+# OS files
+.DS_Store
+Thumbs.db
