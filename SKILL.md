@@ -45,9 +45,7 @@ bypy --downloader aria2c download 你的文件.fastq.gz ./
 
 ### 加载本 Skill
 
-在 WispTerm 聊天框输入：`$baidu-netdisk-transfer`
-
-然后告诉 Agent 你要做什么，例如：
+加载 Skill 后，告诉助手你要做什么，例如：
 - "把百度网盘 bypy 里的 ruchuang 目录下载到 /data/raw/"
 - "检查下载进度"
 - "下载完成后跑 MD5 校验"
@@ -791,9 +789,9 @@ nohup bypy --downloader aria2c download 项目名/样本1_R1.fastq.gz ./ > dl_1.
 
 ### 文档自动生成
 
-这三份文档是由 WispTerm Agent 根据本 SKILL.md 内容自动生成的。当 SKILL.md 有重大更新时，可以要求 Agent 重新生成。
+这三份文档是根据本 SKILL.md 内容自动生成的。当 SKILL.md 有重大更新时，可以重新生成。
 
-**重新生成命令**（在 WispTerm 聊天框输入）：
+**重新生成命令**：
 ```
-$baidu-netdisk-transfer，请根据最新的 SKILL.md 重新生成小白文档（Word + Excel + PPT）
+请根据最新的 SKILL.md 重新生成小白文档（Word + Excel + PPT）
 ```
