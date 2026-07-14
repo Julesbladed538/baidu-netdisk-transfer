@@ -43,12 +43,12 @@ bypy info
 bypy --downloader aria2c download 你的文件.fastq.gz ./
 ```
 
-### 加载本 Skill
+### 使用示例
 
-加载 Skill 后，告诉助手你要做什么，例如：
-- "把百度网盘 bypy 里的 ruchuang 目录下载到 /data/raw/"
-- "检查下载进度"
-- "下载完成后跑 MD5 校验"
+安装完成后，你可以直接执行以下操作：
+- 下载数据：`bypy --downloader aria2c download ruchuang/ /data/raw/`
+- 检查进度：`ls -lh /data/raw/` 或 `tail -f dl.log`
+- MD5 校验：`md5sum -c md5.txt`
 
 ---
 
@@ -727,15 +727,16 @@ rm -f test_5mb.bin test_5mb.md5 test_dl.bin test_dl.md5
 | 确认上传 | `bypy list /目录/` |
 | 覆盖已有文件 | 加 `--on-dup overwrite` |
 
-### Agent 对话命令
+### 常用操作命令
 
-| 你要说什么 | 效果 |
+| 你要做什么 | 命令 |
 |-----------|------|
-| `$baidu-netdisk-transfer` | 加载本 Skill |
-| "把 bypy 里的项目下载到 /data/，并行 + 校验" | 自动并行下载并校验 |
-| "检查下载进度" | 查看文件大小和进程状态 |
-| "把服务器结果上传到百度网盘" | 生成 MD5 并上传 |
-| "帮我安装 bypy 和 aria2 并授权" | 一次性环境准备 |
+| 安装 bypy + aria2c | 见 §1.1 方案 A（有 sudo）或方案 B（无 sudo） |
+| 授权 bypy | `bypy info` |
+| 查看网盘文件 | `bypy list /目录/` |
+| 下载整个目录 | `nohup bypy --downloader aria2c download /目录/ ./ > dl.log 2>&1 &` |
+| 上传结果文件 | `bypy --disable-ssl-check --on-dup overwrite upload ./结果 /目录/` |
+| MD5 校验 | `md5sum -c md5.txt` |
 
 ---
 
