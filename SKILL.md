@@ -782,11 +782,11 @@ nohup bypy --downloader aria2c download 项目名/样本1_R1.fastq.gz ./ > dl_1.
 | # | 现象 | 可能原因 | 解决方案 | 修复命令 |
 |---|------|----------|----------|----------|
 | 1 | `<-` 卡死 | 默认下载方式不兼容 | 加 `--downloader aria2c` | `bypy --downloader aria2c download ...` |
-| 2 | 上传卡住 | 文件 > 8MB | 用网页上传 | j计划打开 pan.baidu.com |
+| 2 | 上传卡住 | 文件 > 8MB | 用网页上传 | 打开 pan.baidu.com |
 | 3 | 找不到文件 | 路径不在 bypy 目录 | 移到 `我的应用数据/bypy/` | 网页端操作 |
 | ... | ... | ... | ... | ... |
 
-> 📂 文档位置：`skills/baidu-netdisk-transfer/小白文档/`
+> 📂 文档位置：`小白文档/`
 
 ### 文档自动生成
 
